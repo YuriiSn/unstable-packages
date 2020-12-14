@@ -6,6 +6,6 @@
 ##
 
 unset LD_PRELOAD
-unset LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/system/vendor/lib64:$LD_LIBRARY_PATH
 
 exec @TERMUX_PREFIX@/libexec/hashcat "$@"
